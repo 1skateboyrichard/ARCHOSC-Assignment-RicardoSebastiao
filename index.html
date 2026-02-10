@@ -3,44 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Name</title>
+    <title>Lab Tasks</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
+
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            display: block;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .task {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>My name is: Insert name here</h1>
-    <p>Task I: What I’ve done was, I created a new folder under the workspace folder where I named it: ArchOSC Assignment. Inside this said folder I added 3 documents, them being: A folder called: Pictures where I would store all the screenshot that I will be taken during the lab and a Word document called: Lab 2 Placeholder. Took a screenshot of both folders and saved it in “pictures”. (This process will be done at every task/step during the whole lab)  
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture1.png>
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture2.png>
-Task II: I opened the terminal and input the command “git init” to create a local repository. After I have had created the git within the folder, I repeated the process of taking a screenshot and saving into the “Pictures” folder. 
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture3.png>
-Task III: Went into GitHub and created an online repository. Pressed the “new” button that led me to a tab where I could choose certain setting to create my repository correctly.  Set myself as the owner, added “README”, set the repository name to: ARCHOSC-Assignment-RicardoSebastiao, the visibility was put “private” and on the section “add gitignore” I selected: Visual Studio. After all that I pressed enter and therefore, created my repository. 
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture4.png>
-Task IV: Opened the terminal on the folder by pressing the right button on the mouse and pressing the terminal option on the tab showing certain features. With the terminal open, I used the command “git remote add origin [link of my repository on GitHub]” in order to create a link between the local repository and the online one. Allowing us to push the documents in the “ArchOSC Assignment” folder into the GitHub. Then I used the command “git pull origin main” to get the information that GitHub generated when it created the repository.
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture5.png>
-Task V: I open visual studio code and create a file by selecting the “file”, then “new text file”. After the file had been created, I copied a html code that was given to me into the file and saved in my repository local folder. Once it was saved, I double clicked which opened a web browser site.
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture6.png>
-Task VI: I had to update my local repository. In order to do this, I used the code “git status” tell my local git repository that you want to add the newly created files to it. That returned a list of files that git picks up within the repository that has been created. After that I used the command “git add .” to make git track my files and add them into the repository. Following that I had commit the files so that they are saved to the repository.
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture7.png>
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture8.png>
-Task VII: I had to push my changes into GitHub. I used the command “git push –u origin main”
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture9.png>
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture10.png>
- Task VIII: In order to host the website on GitHub pages. I had to navigate back to my repository and choose settings from the menu at the top, From the settings menu, navigate to “code and automation” and then select pages from the list, From the GitHub pages menu, keep “Build and Deployment” as “Deploy from a branch” Then, in the branch drop down choose your main branch and pressed save. Then I went back the main page of your repository, and search for the “deployments” section, there was a link where I clicked and directed me to my site
- <img c:\Users\984311\Workspace\ArchOSC Assignment\Pictures\Picture11.png>
-</p>
+    <h1>Lab Tasks Overview</h1>
+
+    <img src="Pictures/Picture1.png" alt="Screenshot 1">
+
+    <section>
+        <h2>Task I:</h2>
+        <p class="task">What I’ve done was, I created a new folder under the workspace folder where I named it: ArchOSC Assignment. Inside this said folder, I added 3 documents: A folder called "Pictures" where I would store all the screenshots that I will be taking during the lab, and a Word document called "Lab 2 Placeholder". Took a screenshot of both folders and saved it in "Pictures". (This process will be done at every task/step during the whole lab)</p>
+        <img src="Pictures/Picture1.png" alt="Screenshot 1">
+        <img src="Pictures/Picture2.png" alt="Screenshot 2">
+    </section>
+
+    <section>
+        <h2>Task II:</h2>
+        <p class="task">I opened the terminal and input the command “git init” to create a local repository. After I created the git within the folder, I repeated the process of taking a screenshot and saving it into the "Pictures" folder.</p>
+        <img src="Pictures/Picture3.png" alt="Screenshot 3">
+    </section>
+
+    <section>
+        <h2>Task III:</h2>
+        <p class="task">Went into GitHub and created an online repository. Pressed the “new” button that led me to a tab where I could choose certain settings to create my repository correctly. Set myself as the owner, added “README”, set the repository name to: ARCHOSC-Assignment-RicardoSebastiao, the visibility was put “private”, and on the section “add gitignore”, I selected: Visual Studio. After all that, I pressed enter and created my repository.</p>
+        <img src="Pictures/Picture4.png" alt="Screenshot 4">
+    </section>
+
+    <section>
+        <h2>Task IV:</h2>
+        <p class="task">Opened the terminal in the folder by pressing the right mouse button and selecting the "terminal" option. With the terminal open, I used the command “git remote add origin [link of my repository on GitHub]” in order to create a link between the local repository and the online one. Then I used the command “git pull origin main” to get the information that GitHub generated when it created the repository.</p>
+        <img src="Pictures/Picture5.png" alt="Screenshot 5">
+    </section>
+
+    <section>
+        <h2>Task V:</h2>
+        <p class="task">I opened Visual Studio Code and created a file by selecting “File” then “New Text File”. After the file had been created, I copied an HTML code that was given to me into the file and saved it in my local repository folder. Once saved, I double-clicked it, which opened the file in a web browser.</p>
+        <img src="Pictures/Picture6.png" alt="Screenshot 6">
+    </section>
+
+    <section>
+        <h2>Task VI:</h2>
+        <p class="task">I had to update my local repository. In order to do this, I used the code “git status” to tell my local git repository to add the newly created files. This returned a list of files that git picked up within the repository. After that, I used the command “git add .” to make git track my files and add them to the repository. I then committed the files so that they are saved to the repository.</p>
+        <img src="Pictures/Picture7.png" alt="Screenshot 7">
+        <img src="Pictures/Picture8.png" alt="Screenshot 8">
+    </section>
+
+    <section>
+        <h2>Task VII:</h2>
+        <p class="task">I had to push my changes to GitHub. I used the command “git push –u origin main”.</p>
+        <img src="Pictures/Picture9.png" alt="Screenshot 9">
+        <img src="Pictures/Picture10.png" alt="Screenshot 10">
+    </section>
+
+    <section>
+        <h2>Task VIII:</h2>
+        <p class="task">In order to host the website on GitHub Pages, I had to navigate back to my repository and choose "Settings" from the menu at the top. From the settings menu, I navigated to “Code and Automation” and then selected “Pages” from the list. In the GitHub Pages menu, I kept “Build and Deployment” as “Deploy from a branch”. Then, in the branch dropdown, I chose my main branch and pressed save. I then went back to the main page of the repository, searched for the “Deployments” section, and clicked the link that directed me to my site.</p>
+        <img src="Pictures/Picture11.png" alt="Screenshot 11">
+    </section>
+
 </body>
 </html>
